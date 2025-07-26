@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有商品</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/product_list.css">
+    <link rel="stylesheet" href="./css/product_detail.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="container py-16 align-center d-flex justify-between">
+        <ul class="d-flex align-center">
+            <li class="mr-48">
+                <a href="#">
+                    <img src="./images/Logo.svg" alt="Logo">
+                </a>
+            </li>
+            <li class="mr-40">
+                <a class="py-12" href="product_list.html">商品列表</a>
+            </li>
+            <li>
+                <a class="py-12" href="product_detail.html">品牌故事</a></li>
+        </ul>
+        <a class="p-12" href="#"><i class="bi bi-person"></i></a>
+    </nav>
+
+    <!-- main --> 
+    <main class="container mb-48">
+
+        <!-- 麵包屑 -->
+        <nav class="mb-24">
+            <ol class="d-flex">
+                <li class="breadcrumb"><a class="font-n600" href="#">首頁</a></li>
+                <li class="breadcrumb"><a href="#">所有商品</a></li>
+            </ol>
+        </nav>
+        
+
+        <!-- 大標題 -->
+        <div class="py-7 mb-24">
+            <h1 class="h3">所有商品</h1>
+        </div>
+
+        <div class="row">
+            <!-- 左側導覽列 -->
+            <div class="col-2">
+                <ul class="category">
+                    <li class="py-12 mb-16 active">所有商品</li>
+                    <li class="py-12 mb-16">慢跑鞋</li>
+                    <li class="py-12 mb-16">滑板鞋</li>
+                    <li class="py-12 mb-16">厚底鞋</li>
+                    <li class="py-12">限定 / 聯名企劃</li>
+                </ul>   
+            </div>
+
+            <!-- 右側商品目錄 -->
+            <div class="col-10 mb-32">
+
+                <!-- 商品卡片 -->
+                <div class="row mb-48">
+                    
+                    <div class="col-4 mb-48">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product.png" alt="product image">
+                            <h3 class="h6 mb-4">PLATFORM 404</h2>
+                            <p>NT$2,600</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4 mb-48">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-1.png" alt="product image">
+                            <h3 class="h6 mb-4">PLATFORM 404</h2>
+                            <p>NT$2,600</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4 mb-48">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-2.png" alt="product image">
+                            <h3 class="h6 mb-4">VM001</h2>
+                            <p>NT$2,600</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4 mb-48">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-3.png" alt="product image">
+                            <h3 class="h6 mb-4">Melty Kiss</h2>
+                            <p>NT$4,000</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4 mb-48">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-4.png" alt="product image">
+                            <h3 class="h6 mb-4">BOOMBLOK</h2>
+                            <p>NT$3,200</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4 mb-48">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-5.png" alt="product image">
+                            <h3 class="h6 mb-4">BOOMBLOK</h2>
+                            <p>NT$3,2000</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-6.png" alt="product image">
+                            <h3 class="h6 mb-4">R:UNER</h2>
+                            <p>NT$4,000</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-7.png" alt="product image">
+                            <h3 class="h6 mb-4">Sugar Snap</h2>
+                            <p>NT$4,000</p>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="product_detail.html">
+                            <img class="mb-12" src="./images/product-8.png" alt="product image">
+                            <h3 class="h6 mb-4">Neofoam</h2>
+                            <p>NT$4,000</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- 分頁按鈕 -->
+                <div class="d-flex justify-center">
+                    <ol class="d-flex">
+                        <li class="mr-12 page-btn"><button class="btn" disabled><i class="bi bi-chevron-left"></i></button></li>
+                        <li class="mr-8 page-btn"><button class="btn active">1</button></li>
+                        <li class="mr-8 page-btn"><button class="btn">2</button></li>
+                        <li class="mr-8 page-btn"><button class="btn">3</button></li>
+                        <li class="mr-8 page-btn"><button class="btn">...</button></li>
+                        <li class="mr-8 page-btn"><button class="btn">10</button></li>
+                        <li class="page-btn"><button class="btn"><i class="bi bi-chevron-right"></i></button></li>
+                    </ol>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </main>
+
+    <!-- 加入會員區塊 -->
+    <div class="d-flex bg-p200 py-24 justify-center align-center">
+        <h2 class="h4 mr-24">加入會員取得 9 折優惠</h2>
+        <button class="btn btn-n900">馬上註冊</button>
+    </div>
+    
+    <!-- footer -->
+    <footer class="bg-n100 py-64">
+        <div class="container">
+            <!-- 導覽列 -->
+            <nav class="d-flex justify-between">
+                <a href="#"><img src="./images/Logo.svg" alt="logo"></a>
+                <ul class="d-flex mb-24">
+                    <li class="py-12 mr-40"><a href="#">商品列表</a></li>
+                    <li class="py-12"><a href="#">品牌故事</a></li>
+                </ul>
+            </nav>
+
+            <!-- copyright -->
+            <div class="pt-32 d-flex d-column align-center copyright-border">
+                <p class="font-sm font-n600 pb-4">Copyright ©2025 URBNSTYLE</p>
+                <p class="font-sm font-n600">All Rights Reserved.</p> 
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

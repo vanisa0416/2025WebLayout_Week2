@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* 顏色變數 */
+:root {
+    --primary-100: #F5FEE7;
+    --primary-200: #E8FEC5;
+    --primary-300: #C0FA73;
+    --primary-400: #57A203;
+    --primary-500: #477A11;
+    --neutral-0:   #FFFFFF;
+    --neutral-100: #F8F9FA;
+    --neutral-200: #E9ECEF;
+    --neutral-300: #DEE2E6;
+    --neutral-400: #CED4DA;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6C757D;
+    --neutral-700: #495057;
+    --neutral-800: #343A40;
+    --neutral-900: #212529;
+    --danger-300:  #E9ECEF;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-900);
+}
+
+.container {
+    width: 1296px;      /* 滿版是1920，兩側留白各312，因此中間的寬度是 1920-312*2 = 1296 */
+    margin: 0 auto;
+}
+
+
+/* 通用樣式 */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-1 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12);
+}
+
+.col-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *2);
+}
+
+.col-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *3);
+}
+
+.col-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *4);
+}
+
+.col-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *5);
+}
+
+.col-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *6);
+}
+
+.col-7 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *7);
+}
+
+.col-8 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *8);
+}
+
+.col-9 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *9);
+}
+
+.col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *10);
+}
+
+.col-11 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 *11);
+}
+
+.col-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+
+
+.p-12 {
+    padding: 12px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pb-4 {
+    padding-bottom: 4px;
+}
+
+.py-7 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mr-48 {
+    margin-right: 48px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.d-column {
+    flex-direction: column;
+}
+
+
+.h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.font-sm {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.font-n600 {
+    color: var(--neutral-600);
+}
+
+
+
+/* 麵包屑的偽元素 */
+.breadcrumb + .breadcrumb::before {
+    content: "/";
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+
+
+.bi {
+    vertical-align: bottom;
+}
+
+/* 按鈕通用樣式 */
+.btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-n900 {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+
+/* 分頁按鈕 */
+.page-btn .btn {
+    padding: 8px 15.5px;
+    border-radius: 0;
+}
+
+/* 啟用狀態的按鈕 */
+.page-btn .active {
+    background-color: var(--primary-300);
+}
+
+
+/* 背景色 */
+.bg-n100 {
+    background-color: var(--neutral-100);
+}
+.bg-p200 {
+    background-color: var(--primary-200);
+}
