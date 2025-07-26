@@ -2,7 +2,3 @@
     color: var(--primary-400);
 }
 
-.copyright-border {
-    border-top: 1px solid var(--neutral-300);
-    margin: 0 auto;
-}

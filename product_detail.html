@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品詳情</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/product_detail.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="container py-16 align-center d-flex justify-between">
+        <ul class="d-flex align-center">
+            <li class="mr-48">
+                <a href="#">
+                    <img src="./images/Logo.svg" alt="Logo">
+                </a>
+            </li>
+            <li class="mr-40">
+                <a class="py-12" href="product_list.html">商品列表</a>
+            </li>
+            <li>
+                <a class="py-12" href="product_detail.html">品牌故事</a></li>
+        </ul>
+        <a class="p-12" href="#"><i class="bi bi-person"></i></a>
+    </nav>
+
+    <!-- main --> 
+    <main class="container py-64 mb-48">
+
+        
+        <div class="row">
+
+            <!-- 左側鞋鞋照 -->
+            <div class="col-7">
+                <div class="detail-row">
+                    <div class="detail-col mb-8">
+                        <a href="#"><img src="./images/image.png" alt="detail photo"></a>
+                    </div>
+
+                    <div class="detail-col mb-8">
+                        <a href="#"><img src="./images/image-1.png" alt="detail photo"></a>
+                    </div>
+                    
+                    <div class="detail-col mb-8">
+                        <a href="#"><img src="./images/image-2.png" alt="detail photo"></a>
+                    </div>
+                    
+                    <div class="detail-col mb-8">
+                        <a href="#"><img src="./images/image-3.png" alt="detail photo"></a>
+                    </div>
+                    
+                    <div class="detail-col mb-8">
+                        <a href="#"><img src="./images/image-4.png" alt="detail photo"></a>
+                    </div>
+                    
+                    <div class="detail-col mb-8">
+                        <a href="#"><img src="./images/image-5.png" alt="detail photo"></a>
+                    </div>
+                    
+                    <div class="detail-col">
+                        <a href="#"><img src="./images/image-6.png" alt="detail photo"></a>
+                    </div>
+                    
+                    <div class="detail-col">
+                        <a href="#"><img src="./images/image-7.png" alt="detail photo"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右側產品詳情 -->
+            <div class="col-5">
+
+                <!-- 麵包屑導覽 -->
+                <nav class="mb-12">
+                    <ol class="d-flex">
+                        <li class="breadcrumb"><a class="font-n600" href="#">首頁</a></li>
+                        <li class="breadcrumb"><a class="font-n600" href="#">女鞋</a></li>
+                        <li class="breadcrumb"><a class="font-n600" href="#">滑板鞋</a></li>
+                        <li class="breadcrumb"><a href="#">Platform 404</a></li>
+                    </ol>
+                </nav>
+                
+                <!-- 大標題 -->
+                <h1 class="h2 mb-16">Platform 404</h1>
+                
+                <!-- 售價 -->
+                <h2 class="h5 font-p400 mb-16">NT$2,600<del class="del">NT$3,200</del></h2>
+                
+                <!-- 產品說明 -->
+                <div class="mb-32">
+                    <p class="mb-12 font-md400">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+                    <p class="font-md400">鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+                </div>
+
+                <!-- 顏色 -->
+                <div class="mb-32">
+                    <h2 class="mb-8 font-md400">顏色</h2>
+                    <div class="d-flex">
+                        <div class="product-color mr-8">
+                            <a href="#"><img class="mb-4" src="./images/product.png" alt="blue"></a>
+                            <p>藍色</p>
+                        </div>
+                        <div class="product-color">
+                            <a href="#"><img class="mb-4" src="./images/product-1.png" alt="blue"></a>
+                            <p>卡其色</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 尺寸按鈕 -->
+                <div class="mb-48">
+                    <h2 class="mb-8 font-md400">尺寸</h2>
+                    <div class="d-flex flex-wrap gap-8 mb-8">
+                        <button class="btn btn-size active">35(22.5cm)</button>
+                        <button class="btn btn-size">36(23.0cm)</button>
+                        <button class="btn btn-size">37(23.5cm)</button>
+                        <button class="btn btn-size">38(24.0cm)</button>
+                        <button class="btn btn-size">39(24.5cm)</button>
+                        <button class="btn btn-size">40(25.0cm)</button>
+                        <button class="btn btn-size">41(26.0cm)</button>
+                        <button class="btn btn-size disable" disabled>42(26.5cm)</button>
+                        <button class="btn btn-size disable" disabled>43(27.0cm)</button>
+                    </div>
+                    <p class="font-danger">僅剩 3 雙</p>
+                </div>
+
+                <!-- 收藏 & 預約按鈕 -->
+                <div class="btn-action d-flex gap-8 mb-32">
+                    <button class="btn btn-light">加入收藏</button>
+                    <button class="btn btn-dark">門市預約試穿</button>
+                </div>
+
+                <!-- 商品材質 & 購買需知 & 保養方式 -->
+                <div class="py-12 border-bottom">
+                    <h2 class="mb-4">商品材質</h2>
+                    <p class="font-md400 font-n600">鞋面：合成皮革（Synthetic Leather）</p>
+                    <p class="font-md400 font-n600">內裡：透氣網布材質，提升舒適與排汗性</p>
+                    <p class="font-md400 font-n600">鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</p>
+                    <p class="font-md400 font-n600">鞋帶：聚酯纖維，耐拉扯不易鬆脫</p>
+                </div>
+                <div class="py-12 border-bottom">
+                    <h2 class="mb-4">購買須知</h2>
+                    <p class="font-md400 font-n600">商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
+                    <p class="font-md400 font-n600">建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
+                    <p class="font-md400 font-n600">本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+                </div>
+                <div class="py-12 border-bottom">
+                    <h2 class="mb-4">保養方式</h2>
+                    <p class="font-md400 font-n600">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
+                    <p class="font-md400 font-n600">收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</p>
+                    <p class="font-md400 font-n600">若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        
+
+
+        
+
+
+
+    </main>
+
+    <!-- 加入會員區塊 -->
+    <div class="d-flex bg-p200 py-24 justify-center align-center">
+        <h2 class="h4 mr-24">加入會員取得 9 折優惠</h2>
+        <button class="btn btn-dark">馬上註冊</button>
+    </div>
+    
+    <!-- footer -->
+    <footer class="bg-n100 py-64">
+        <div class="container">
+            <!-- 導覽列 -->
+            <nav class="d-flex justify-between">
+                <a href="#"><img src="./images/Logo.svg" alt="logo"></a>
+                <ul class="d-flex mb-24">
+                    <li class="py-12 mr-40"><a href="#">商品列表</a></li>
+                    <li class="py-12"><a href="#">品牌故事</a></li>
+                </ul>
+            </nav>
+
+            <!-- copyright -->
+            <div class="pt-32 d-flex d-column align-center copyright-border">
+                <p class="font-sm font-n600 pb-4">Copyright ©2025 URBNSTYLE</p>
+                <p class="font-sm font-n600">All Rights Reserved.</p> 
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

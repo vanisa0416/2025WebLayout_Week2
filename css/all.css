@@ -18,7 +18,7 @@
     --neutral-700: #495057;
     --neutral-800: #343A40;
     --neutral-900: #212529;
-    --danger-300:  #E9ECEF;
+    --danger-300:  #D74F4F;
 }
 
 
@@ -204,6 +204,10 @@ a {
     margin-bottom: 4px;
 }
 
+.mb-8 {
+    margin-bottom: 8px;
+}
+
 .mb-12 {
     margin-bottom: 12px;
 }
@@ -224,9 +228,16 @@ a {
     margin-bottom: 48px;
 }
 
+.gap-8 {
+    gap: 8px;
+}
 
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .justify-between {
@@ -245,6 +256,12 @@ a {
     flex-direction: column;
 }
 
+.h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
 
 .h3 {
     font-size: 28px;
@@ -254,6 +271,12 @@ a {
 
 .h4 {
     font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.h5 {
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -270,10 +293,32 @@ a {
     line-height: 1.5;
 }
 
+/*
+.font-md {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}*/
+
+.font-md400 {
+    font-weight: 400;
+}
+
 .font-n600 {
     color: var(--neutral-600);
 }
 
+.font-p400 {
+    color: var(--primary-400);
+}
+
+.font-danger {
+    color: var(--danger-300);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--neutral-300);
+}
 
 
 /* 麵包屑的偽元素 */
@@ -297,13 +342,20 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.05em;
     background-color: transparent;
     cursor: pointer;
 }
 
-.btn-n900 {
+/* 深色按鈕 */
+.btn-dark {
     background-color: var(--neutral-900);
     color: var(--neutral-0);
+}
+
+/* 淺色按鈕 */
+.btn-light {
+    border: 1px solid var(--neutral-900);
 }
 
 /* 分頁按鈕 */
@@ -324,4 +376,9 @@ a {
 }
 .bg-p200 {
     background-color: var(--primary-200);
+}
+
+.copyright-border {
+    border-top: 1px solid var(--neutral-300);
+    margin: 0 auto;
 }
